@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background: #555;
+    text-align: justify;
+}
+
+.container{
+    background-color: #fafafa;
+    height: 100%;
+    width: 100vw;
+    padding:80px 40px;
+    transform-origin: left top;
+    transition: transform 0.4s ease-in;
+}
+
+.rotate{
+    transform: rotate(-8deg);
+    
+}
+
+img{
+    width: 100%;
+}
+
+/* main */
+
+.rotate-navigate{
+    position: fixed;
+    width:200px;
+    height: 200px;
+    background-color: orange;
+    border-radius: 50%;
+    top:-100px;
+    left:-100px;
+    transition: transform 0.5s ease-in;
+    z-index: 1;
+}
+
+.rotate-navigate.show-nav{
+    transform: rotate(-128deg);
+    transition: transform 0.5s ease-in;
+}
+
+.rotate-navigate button{
+    position: absolute;
+    top:40%;
+    cursor: pointer;
+    color:white;
+    font-size: 25px;
+    background:transparent;
+    border: none;
+}
+
+.open{
+    position: absolute;
+    bottom:0px;
+    border:none;
+    margin-top: 50px;
+    right:50px;
+}
+.close{
+    top:0;
+    left:20px;
+}
+
+
+.nav-list{
+    position: fixed;
+    left:20px;
+    bottom:40px;
+    z-index: -1;
+}
+.nav-link{
+    color:white;
+}
+.nav-link i{
+    padding-right:10px;
+}
